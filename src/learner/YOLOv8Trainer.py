@@ -4,8 +4,6 @@ import cv2
 
 class YOLOv8Trainer:
 
-    model = None
-
     def __init__(self,model_name):
         print('YOLOv8Trainer init')
         self.model_name = model_name
@@ -13,7 +11,7 @@ class YOLOv8Trainer:
 
     def create_model(self):
         print('create_model')
-        self.model = YOLO("yolov8m.pt")
+        self.model = YOLO("yolov8n.pt")
 
     def load_model(self):
         print('load_model')
